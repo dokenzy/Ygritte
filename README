@@ -1,0 +1,16 @@
+# Ygritte
+show text file lines
+
+# How to use
+Read `test.py` file.
+## Example
+```
+from ygritte import Ygritte
+self.yg = Ygritte()
+self.yg.line('.', ['txt',])
+self.yg.line('mixed', ['js', 'html', 'tex'])
+self.yg.line('mixed', ['js', 'html', 'tex'], recursive=True)
+```
+
+## LICENSE
+This package itself is MIT License, but sample files's text that have name 's01e03.*' come from Wikipedia. Read LICENSE file.

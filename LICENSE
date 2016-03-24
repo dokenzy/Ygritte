@@ -1,3 +1,8 @@
+# License
+This package consists of two parts, and each part has individual license.
+
+
+## Ygritte
 The MIT License (MIT)
 
 Copyright (c) 2016 dokenzy
@@ -19,3 +24,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+## s030n.[py|js|html|txt]
+These files's text come from Wikipedia.
+- https://en.wikipedia.org/wiki/Game_of_Thrones_(season_3)
+- Creative Commons Attribution-Share-Alike License 3.0
