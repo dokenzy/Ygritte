@@ -4,21 +4,21 @@ import os
 SEP = os.path.sep
 
 class Ygritte(object):
-    def line(self, folder, exts, deep=0):
+    def line(self, folder, exts, depth=0):
         ''' get line number of files that extention is `ext` in a folder
         :param folder: directory
         :type folder: str
         :param exts: extensions
         :type exts: list
-        :param deep: recursive level
-        :type deep: int
+        :param depth: recursive level
+        :type depth: int
         :return value: total line number
         :return type: int
         '''
         self.folder = os.path.abspath(folder)
-        self.full_deep = len(self.folder.split(SEP))
+        self.full_depth = len(self.folder.split(SEP))
         self.exts = exts
-        self.deep = deep
+        self.depth = depth
 
         self.count = 0  # total line numbers
 
@@ -43,8 +43,8 @@ class Ygritte(object):
                 self.count += self.a_file(os.path.join(_dir, file))
             else:
                 sub_dir = os.path.abspath(os.path.join(_dir, file))
-                deep = len(sub_dir.split(SEP)) - 1
-                if os.path.isdir(sub_dir) and deep - self.full_deep < self.deep:
+                depth = len(sub_dir.split(SEP)) - 1
+                if os.path.isdir(sub_dir) and depth - self.full_depth < self.depth:
                     self.a_dir(ext, sub_dir)
 
     def a_file(self, file):

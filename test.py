@@ -26,31 +26,31 @@ class TestYgritte(unittest.TestCase):
         self.assertEqual(70, count)
 
     def test_count_files_ext_recursive(self):
-        count = self.yg.line('python', ['py',], deep=1)
+        count = self.yg.line('python', ['py',], depth=1)
         self.assertEqual(34, count)
 
     def test_count_files_exts_recursive(self):
-        count = self.yg.line('mixed', ['js', 'html', 'tex'], deep=2)
+        count = self.yg.line('mixed', ['js', 'html', 'tex'], depth=2)
         self.assertEqual(103, count)
 
-    def test_count_files_exts_recursive_deep1(self):
-        count = self.yg.line('deep', ['py', 'js', 'html', 'tex'], deep=1)
+    def test_count_files_exts_recursive_depth1(self):
+        count = self.yg.line('deep', ['py', 'js', 'html', 'tex'], depth=1)
         self.assertEqual(54, count)
 
-    def test_count_files_exts_recursive_deep1(self):
-        count = self.yg.line('deep', ['py', 'js', 'html', 'tex'], deep=2)
+    def test_count_files_exts_recursive_depth1(self):
+        count = self.yg.line('deep', ['py', 'js', 'html', 'tex'], depth=2)
         self.assertEqual(87, count)
 
-    def test_count_files_exts_recursive_deep1(self):
-        count = self.yg.line('deep', ['html', 'js'], deep=2)
+    def test_count_files_exts_recursive_depth1(self):
+        count = self.yg.line('deep', ['html', 'js'], depth=2)
         self.assertEqual(27, count)
 
-    def test_count_files_exts_recursive_deep1(self):
-        count = self.yg.line('deep', ['py', 'js', 'html', 'tex'], deep=3)
+    def test_count_files_exts_recursive_depth1(self):
+        count = self.yg.line('deep', ['py', 'js', 'html', 'tex'], depth=3)
         self.assertEqual(104, count)
 
-    def test_count_files_exts_recursive_deep(self):
-        count = self.yg.line('deep', ['py', 'js', 'html', 'tex'], deep=4)
+    def test_count_files_exts_recursive_depth(self):
+        count = self.yg.line('deep', ['py', 'js', 'html', 'tex'], depth=4)
         self.assertEqual(121, count)
 
     def test_raise_type_error(self):
