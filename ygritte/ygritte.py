@@ -54,6 +54,5 @@ class Ygritte(object):
         :return: count of lines
         :return type: int
         '''
-        with open(file) as f:
+        with open(file, encoding='utf-8') as f:
             return sum(1 for _ in f)
-
